@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routeSoloApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Routes Solo</title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <script src="vendor/angular/angular.min.js" type="text/javascript"></script>
+    <script src="vendor/angular-route/angular-route.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/client.min.js" type="text/javascript"></script>
+    <base href="/">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Are you ready to cast your vote?!</h1>
+      <a href="/Bern"><button class="btn btn-primary btn-lg">BERN!</button></a>
+      <a href="/T-rump"><button class="btn btn-danger btn-lg">TRUMP!</button></a>
+      <a href="/El-nino"><button class="btn btn-warning btn-lg">El Nino is back...</button></a>
+
+      <div ng-view>
+      </div>
+    </div>
+  </body>
+</html>
